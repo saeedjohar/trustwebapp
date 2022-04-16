@@ -2,10 +2,13 @@
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
-
+from dotenv import load_dotenv
 
 def main():
     """Run administrative tasks."""
+    if not 'WEBSITE_HOSTNAME' in os.environ:
+        print("Loading environment variables for .env file")
+        load_dotenv('./.env')
 
     # When running in Azure, the WEBSITE_HOSTNAME environment variable is automatically set to
     # the URL of the app (e.g. msdocs-python-webapp-quickstart-123.azurewebsites.net)

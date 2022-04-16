@@ -1,0 +1,30 @@
+{% load static %}
+<!doctype html>
+<head>
+    <title>Saeed Thesis - Quickstart</title>
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+</head>
+<html>
+   <body>
+     <main>
+        <div class="px-4 py-3 my-2 text-center">
+           
+            <h1>
+                RULES of The Game
+            </h1>
+           <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris risus diam, rutrum a purus a, aliquam congue sapien. Quisque rhoncus imperdiet hendrerit. Quisque nec dictum dolor. Etiam ullamcorper turpis sem, sed dignissim dui laoreet vel. Cras pretium quam id eleifend accumsan. Sed dictum, nibh eget dignissim elementum, nulla erat accumsan odio, sed hendrerit ex turpis a neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis eu finibus ipsum. Nunc in velit arcu. Integer ut porttitor sem, sed luctus lacus.
+
+            Nam tristique elementum felis, a cursus arcu efficitur condimentum. Aenean a mauris justo. Quisque gravida quis quam sit amet suscipit. Sed luctus rhoncus tortor nec scelerisque. Integer sed enim sit amet eros venenatis sagittis quis eget eros. Praesent sed sagittis ipsum. Sed vitae dolor id leo vehicula egestas. Cras ullamcorper condimentum blandit. Morbi ac sem ex. Quisque viverra, nisi sed varius elementum, libero ex congue mauris, ut volutpat elit massa eget urna. Morbi id ligula lectus. Nam mattis elit sed turpis hendrerit tempor.
+            
+            Morbi a dolor non nisl scelerisque interdum quis aliquet est. Donec volutpat mauris at ligula efficitur rutrum. Pellentesque eget elit libero. Suspendisse facilisis rhoncus urna, non auctor lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec accumsan nec quam et euismod. Nunc scelerisque leo urna, id mattis metus viverra ut. Etiam laoreet leo at nisi maximus scelerisque. Maecenas sed nunc tortor. Ut a massa non est porttitor tincidunt. Etiam consequat pharetra fermentum. Donec scelerisque sollicitudin lacus non mollis. Integer lacinia ornare nisl quis varius.
+           </p>
+        </div>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center my-2">
+            <form method="post" action="agree">
+            <button {% url 'index' %} type="agree" class="btn btn-primary btn-lg px-4 gap-3">Agree</button>
+            <button type="disagree" class="btn btn-primary btn-lg px-4 gap-3">Disagree</button>
+          </div>
+     </main>      
+   </body>
+</html>
